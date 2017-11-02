@@ -1,3 +1,3 @@
-import { IArticle } from './interfaces/iarticle'
-import { ContentType } from './interfaces/contenttype'
-import { IZone } from './interfaces/izone'
+export * from './interfaces/iarticle'
+export * from './interfaces/contenttype'
+export * from './interfaces/izone'
