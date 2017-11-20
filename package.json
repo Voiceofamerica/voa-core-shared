@@ -1,8 +1,8 @@
 {
   "name": "voa-core-shared",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "",
-  "main": "",
+  "main": "index.ts",
   "types": "index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

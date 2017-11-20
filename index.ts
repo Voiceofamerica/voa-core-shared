@@ -1,0 +1,1 @@
+export { voaSchema } from './graphql/schema'
