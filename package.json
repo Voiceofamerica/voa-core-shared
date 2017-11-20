@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/Voiceofamerica/voa-core-shared/issues"
   },
-  "homepage": "https://github.com/Voiceofamerica/voa-core-shared#readme"
+  "homepage": "https://github.com/Voiceofamerica/voa-core-shared#readme",
+  "dependencies": {
+    "graphql-tag": "^2.5.0"
+  }
 }
