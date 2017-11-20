@@ -1,4 +1,4 @@
-import { ContentType } from './icontenttype'
+import { ContentType } from './contenttype'
 
 export interface IZone {
   id: number

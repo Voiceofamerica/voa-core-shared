@@ -1,1 +1,1 @@
-export { voaSchema } from './graphql/schema'
+export { voaSchema } from './lib/graphql/schema'

@@ -1,3 +1,3 @@
-export * from './interfaces/iarticle'
-export * from './interfaces/contenttype'
-export * from './interfaces/izone'
+export * from './lib/interfaces/iarticle'
+export * from './lib/interfaces/contenttype'
+export * from './lib/interfaces/izone'

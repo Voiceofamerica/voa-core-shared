@@ -14,9 +14,9 @@ export interface IArticle {
   type: ContentType
   pubDate: Date
   lastUpdated: Date
-  url: URL
+  url: string
   /** Short alternative of the article url. Can be used for Twitter like web site on so on. */
-  twitter: URL
+  twitter: string
   title: string
   introduction: string
   content: string
@@ -35,7 +35,7 @@ export interface IArticle {
     imageTitle: string
     id: number
     type: ContentType
-    url: URL
+    url: string
   }
   audio: {
     audioTitle: string
@@ -44,7 +44,7 @@ export interface IArticle {
     /** seconds */
     duration: number
     /** audio/mp3 */
-    mime: MimeType
+    mime: string
     url: string
     date: string
   }
@@ -58,8 +58,8 @@ export interface IArticle {
     height: number
     /** seconds */
     duration: number
-    url: URL
-    thumbnail: URL
+    url: string
+    thumbnail: string
   }
   /** story array */
   relatedStories: {
@@ -68,9 +68,9 @@ export interface IArticle {
     pubDate: Date
     /** a-article, v-video or p-photogallery */
     type: ContentType
-    url: URL
+    url: string
     /** Short alternative of the article url. Can be used for Twitter like web site on so on. */
-    twitter: URL
-    thumbnailUrl: URL
+    twitter: string
+    thumbnailUrl: string
   }[]
 }
