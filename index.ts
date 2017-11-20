@@ -1,1 +1,0 @@
-export { articleSchema } from './lib/graphql/articleSchema'
