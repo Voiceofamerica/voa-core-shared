@@ -7,7 +7,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rimraf ./dist && tsc",
-    "prepare": "npm run build"
+    "preprepare": "apollo-codegen introspect-schema ./lib/graphql/articleSchema.graphql --output ./introspect/articleSchema.json",
+    "prepare": "npm run build && npm run copyIntrospections",
+    "copyIntrospections": "find ./introspect -type f -name '*.json' | cpio -p -d -v ./dist"
   },
   "repository": {
     "type": "git",
@@ -25,6 +27,7 @@
     "graphql-tag": "^2.5.0"
   },
   "devDependencies": {
+    "apollo-codegen": "^0.17.2",
     "rimraf": "^2.6.2",
     "typescript": "^2.6.1"
   }
