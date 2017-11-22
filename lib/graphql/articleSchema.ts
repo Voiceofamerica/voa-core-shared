@@ -1,9 +1,6 @@
 import gql from 'graphql-tag'
 
 export const articleSchema = gql`
-scalar Date
-scalar URL
-
 enum Audience {
   en
   zh
@@ -39,7 +36,7 @@ type Image {
   imageTitle: String
   id: Int
   type: [ContentType]
-  url: URL
+  url: String
 }
 
 type Audio {
@@ -48,8 +45,8 @@ type Audio {
   id: Int
   duration: Int
   mime: String
-  url: URL
-  date: Date
+  url: String
+  date: String
 }
 
 type Video {
@@ -60,18 +57,18 @@ type Video {
     width: Int
     height: Int
     duration: Int
-    url: URL
-    thumbnail: URL
+    url: String
+    thumbnail: String
 }
 
 type RelatedStory {
     storyTitle: String
     id: Int
-    pubDate: Date
+    pubDate: String
     type: [ContentType]
     url: String
-    twitter: URL
-    thumbnailUrl: URL
+    twitter: String
+    thumbnailUrl: String
 }
 
 type Article {
@@ -79,10 +76,10 @@ type Article {
   site: Int
   zone: Int
   type: [ContentType]
-  pubDate: Date
-  lastUpdated: Date
-  url: URL
-  twitter: URL
+  pubDate: String
+  lastUpdated: String
+  url: String
+  twitter: String
   title: String
   introduction: String
   content: String
@@ -96,5 +93,11 @@ type Article {
 
 type Query {
   articles(source: Audience): [Article]
+}
+
+
+type Query {
+  articles(source: Audience): [Article]
+  articleById(source: Audience, id: Int): Article
 }
 `
