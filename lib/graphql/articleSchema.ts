@@ -90,12 +90,6 @@ type Article {
   relatedStories: [RelatedStory]
 }
 
-
-type Query {
-  articles(source: Audience): [Article]
-}
-
-
 type Query {
   articles(source: Audience): [Article]
   articleById(source: Audience, id: Int): Article
