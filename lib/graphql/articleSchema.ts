@@ -92,6 +92,6 @@ type Article {
 
 type Query {
   articles(source: Audience): [Article]
-  articleById(source: Audience, ArticleId: Int): Article
+  articleById(source: Audience, id: Int): Article
 }
 `
