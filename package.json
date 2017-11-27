@@ -6,14 +6,18 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "create-ts-file": "./scripts/create-ts-file.sh",
+    "prebuild": "npm run create-ts-file",
     "build": "rimraf ./dist && tsc",
     "postbuild": "npm run introspect",
-    "introspect": "apollo-codegen introspect-schema ./lib/graphql/*.graphql --output ./introspect/schema.json",
+    "introspect":
+      "apollo-codegen introspect-schema ./lib/graphql/schema.graphql --output ./introspect/schema.json",
     "postintrospect": "find ./introspect -type f -name '*.json' | cpio -p -d -v ./dist",
     "prepare": "npm version minor",
     "pregit-publish": "npm run prepare",
-    "git-publish": "git push --tags && git push",
-    "push-schema": "npm run build && git commit -a -m 'updating gql schema' && npm run git-publish"
+    "git-publish": "git push && git push --tags",
+    "push-schema":
+      "npm run build && git commit -a -m 'updating gql schema' && npm run git-publish"
   },
   "repository": {
     "type": "git",

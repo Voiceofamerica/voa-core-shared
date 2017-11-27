@@ -1,3 +1,2 @@
-export { articleSchema } from './graphql/articleSchema'
-export { zoneSchema } from './graphql/zoneSchema'
+export { schema } from './graphql/schema'
 export { QueryParams } from './interfaces/queryParams'
