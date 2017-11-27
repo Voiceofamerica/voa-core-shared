@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "formulahendry.auto-close-tag",
+    "esbenp.prettier-vscode",
+    "DSKWRK.vscode-generate-getter-setter",
+    "rbbit.typescript-hero",
+    "eg2.tslint",
+    "christian-kohler.path-intellisense",
+    "CoenraadS.bracket-pair-colorizer"
+  ]
+}
