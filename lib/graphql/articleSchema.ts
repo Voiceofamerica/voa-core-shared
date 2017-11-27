@@ -1,55 +1,55 @@
 import gql from 'graphql-tag'
 
 export const articleSchema = gql`
-enum Audience {
-  en
-  zh
-  fa
-}
+  enum Audience {
+    en
+    zh
+    fa
+  }
 
-enum ContentType {
-  Audio
-  Video
-  PhotoGallery
-}
+  enum ContentType {
+    Audio
+    Video
+    PhotoGallery
+  }
 
-enum ArticleVideoRelationship {
-  SameItem
-  MainImage
-  EmbededInContent
-}
+  enum ArticleVideoRelationship {
+    SameItem
+    MainImage
+    EmbededInContent
+  }
 
-type Name {
-  first: String!
-  middle: String
-  last: String
-}
+  type Name {
+    first: String!
+    middle: String
+    last: String
+  }
 
-type Author {
-  name: Name!
-  email: String
-  description: String
-  id: Int!
-}
+  type Author {
+    name: Name!
+    email: String
+    description: String
+    id: Int!
+  }
 
-type Image {
-  imageTitle: String
-  id: Int!
-  type: [ContentType]
-  url: String!
-}
+  type Image {
+    imageTitle: String
+    id: Int!
+    type: [ContentType]
+    url: String!
+  }
 
-type Audio {
-  audioTitle: String!
-  audioDescription: String
-  id: Int!
-  duration: Int
-  mime: String
-  url: String
-  date: String
-}
+  type Audio {
+    audioTitle: String!
+    audioDescription: String
+    id: Int!
+    duration: Int
+    mime: String
+    url: String
+    date: String
+  }
 
-type Video {
+  type Video {
     videoDescription: String
     guid: String
     relType: ArticleVideoRelationship
@@ -59,9 +59,9 @@ type Video {
     duration: Int
     url: String
     thumbnail: String
-}
+  }
 
-type RelatedStory {
+  type RelatedStory {
     storyTitle: String!
     id: Int!
     pubDate: String!
@@ -69,29 +69,32 @@ type RelatedStory {
     url: String
     twitter: String
     thumbnailUrl: String
-}
+  }
 
-type Article {
-  id: Int!
-  site: Int
-  zone: Int
-  type: [ContentType]
-  pubDate: String!
-  lastUpdated: String
-  url: String
-  twitter: String
-  title: String!
-  introduction: String!
-  content: String!
-  authors: [Author]
-  image: Image
-  audio: Audio
-  video: Video
-  relatedStories: [RelatedStory]
-}
+  type Article {
+    id: Int!
+    site: Int
+    zone: Int
+    type: [ContentType]
+    pubDate: String!
+    lastUpdated: String
+    url: String
+    twitter: String
+    title: String!
+    introduction: String!
+    content: String!
+    authors: [Author]
+    image: Image
+    audio: Audio
+    video: Video
+    relatedStories: [RelatedStory]
+  }
 
-type Query {
-  articles(source: Audience): [Article]
-  articleById(source: Audience, id: Int): Article
-}
+  type Query {
+    articles(source: Audience): [Article]
+    articleById(source: Audience, id: Int): Article
+    articlesByZoneId(souce: Audience, zoneId: Int): [Article]
+    search(source: Audience, keywords: String, zoneId: Int = 0): [Article]
+    breakingNews(source: Audience): [Article]
+  }
 `

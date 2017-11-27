@@ -15,4 +15,8 @@ export const zoneSchema = gql`
     broadcast: Boolean
     name: String!
   }
+
+  type Query {
+    zones(source: Audience): [Zone]
+  }
 `
