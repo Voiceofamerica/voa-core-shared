@@ -1,6 +1,6 @@
 {
   "name": "voa-core-shared",
-  "version": "1.19.0",
+  "version": "1.20.0",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -10,14 +10,12 @@
     "prebuild": "npm run create-ts-file",
     "build": "rimraf ./dist && tsc",
     "postbuild": "npm run introspect",
-    "introspect":
-      "apollo-codegen introspect-schema ./lib/graphql/schema.graphql --output ./introspect/schema.json",
+    "introspect": "apollo-codegen introspect-schema ./lib/graphql/schema.graphql --output ./introspect/schema.json",
     "postintrospect": "find ./introspect -type f -name '*.json' | cpio -p -d -v ./dist",
     "prepare": "npm version minor",
     "pregit-publish": "npm run prepare",
     "git-publish": "git push && git push --tags",
-    "push-schema":
-      "npm run build && git commit -a -m 'updating gql schema' && npm run git-publish"
+    "push-schema": "npm run build && git commit -a -m 'updating gql schema' && npm run git-publish"
   },
   "repository": {
     "type": "git",
