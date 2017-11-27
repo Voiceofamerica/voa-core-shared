@@ -71,6 +71,117 @@
               },
               "isDeprecated": false,
               "deprecationReason": null
+            },
+            {
+              "name": "articlesByZoneId",
+              "description": "",
+              "args": [
+                {
+                  "name": "souce",
+                  "description": "",
+                  "type": {
+                    "kind": "ENUM",
+                    "name": "Audience",
+                    "ofType": null
+                  },
+                  "defaultValue": null
+                },
+                {
+                  "name": "zoneId",
+                  "description": "",
+                  "type": {
+                    "kind": "SCALAR",
+                    "name": "Int",
+                    "ofType": null
+                  },
+                  "defaultValue": null
+                }
+              ],
+              "type": {
+                "kind": "LIST",
+                "name": null,
+                "ofType": {
+                  "kind": "OBJECT",
+                  "name": "Article",
+                  "ofType": null
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "search",
+              "description": "",
+              "args": [
+                {
+                  "name": "source",
+                  "description": "",
+                  "type": {
+                    "kind": "ENUM",
+                    "name": "Audience",
+                    "ofType": null
+                  },
+                  "defaultValue": null
+                },
+                {
+                  "name": "keywords",
+                  "description": "",
+                  "type": {
+                    "kind": "SCALAR",
+                    "name": "String",
+                    "ofType": null
+                  },
+                  "defaultValue": null
+                },
+                {
+                  "name": "zoneId",
+                  "description": "",
+                  "type": {
+                    "kind": "SCALAR",
+                    "name": "Int",
+                    "ofType": null
+                  },
+                  "defaultValue": "0"
+                }
+              ],
+              "type": {
+                "kind": "LIST",
+                "name": null,
+                "ofType": {
+                  "kind": "OBJECT",
+                  "name": "Article",
+                  "ofType": null
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "breakingNews",
+              "description": "",
+              "args": [
+                {
+                  "name": "source",
+                  "description": "",
+                  "type": {
+                    "kind": "ENUM",
+                    "name": "Audience",
+                    "ofType": null
+                  },
+                  "defaultValue": null
+                }
+              ],
+              "type": {
+                "kind": "LIST",
+                "name": null,
+                "ofType": {
+                  "kind": "OBJECT",
+                  "name": "Article",
+                  "ofType": null
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
             }
           ],
           "inputFields": null,

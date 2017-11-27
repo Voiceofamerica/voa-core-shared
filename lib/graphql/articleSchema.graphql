@@ -47,25 +47,25 @@ type Audio {
 }
 
 type Video {
-    videoDescription: String
-    guid: String
-    relType: ArticleVideoRelationship
-    id: Int!
-    width: Int
-    height: Int
-    duration: Int
-    url: String
-    thumbnail: String
+  videoDescription: String
+  guid: String
+  relType: ArticleVideoRelationship
+  id: Int!
+  width: Int
+  height: Int
+  duration: Int
+  url: String
+  thumbnail: String
 }
 
 type RelatedStory {
-    storyTitle: String!
-    id: Int!
-    pubDate: String!
-    type: [ContentType]
-    url: String
-    twitter: String
-    thumbnailUrl: String
+  storyTitle: String!
+  id: Int!
+  pubDate: String!
+  type: [ContentType]
+  url: String
+  twitter: String
+  thumbnailUrl: String
 }
 
 type Article {
@@ -90,4 +90,7 @@ type Article {
 type Query {
   articles(source: Audience): [Article]
   articleById(source: Audience, id: Int): Article
+  articlesByZoneId(souce: Audience, zoneId: Int): [Article]
+  search(source: Audience, keywords: String, zoneId: Int = 0): [Article]
+  breakingNews(source: Audience): [Article]
 }

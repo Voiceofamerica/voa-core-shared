@@ -12,3 +12,7 @@ type Zone {
   broadcast: Boolean
   name: String!
 }
+
+type Query {
+  zones(source: Audience): [Zone]
+}
