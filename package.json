@@ -8,9 +8,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rimraf ./dist && tsc",
     "postbuild": "apollo-codegen introspect-schema ./lib/graphql/articleSchema.graphql --output ./introspect/articleSchema.json",
-    "prepare": "npm run copyIntrospections && npm version minor",
     "copyIntrospections": "find ./introspect -type f -name '*.json' | cpio -p -d -v ./dist",
-    "hobo-publish": "git push --tags && git push"
+    "prepare": "npm run copyIntrospections && npm version minor",
+    "prehobo-publish": "npm run prepare",
+    "git-publish": "git push --tags && git push"
   },
   "repository": {
     "type": "git",
