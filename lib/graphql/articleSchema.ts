@@ -20,29 +20,29 @@ enum ArticleVideoRelationship {
 }
 
 type Name {
-  first: String
+  first: String!
   middle: String
   last: String
 }
 
 type Author {
-  name: Name
+  name: Name!
   email: String
   description: String
-  id: Int
+  id: Int!
 }
 
 type Image {
   imageTitle: String
-  id: Int
+  id: Int!
   type: [ContentType]
-  url: String
+  url: String!
 }
 
 type Audio {
-  audioTitle: String
+  audioTitle: String!
   audioDescription: String
-  id: Int
+  id: Int!
   duration: Int
   mime: String
   url: String
@@ -53,7 +53,7 @@ type Video {
     videoDescription: String
     guid: String
     relType: ArticleVideoRelationship
-    id: Int
+    id: Int!
     width: Int
     height: Int
     duration: Int
@@ -62,9 +62,9 @@ type Video {
 }
 
 type RelatedStory {
-    storyTitle: String
-    id: Int
-    pubDate: String
+    storyTitle: String!
+    id: Int!
+    pubDate: String!
     type: [ContentType]
     url: String
     twitter: String
@@ -72,17 +72,17 @@ type RelatedStory {
 }
 
 type Article {
-  id: Int
+  id: Int!
   site: Int
   zone: Int
   type: [ContentType]
-  pubDate: String
+  pubDate: String!
   lastUpdated: String
   url: String
   twitter: String
-  title: String
-  introduction: String
-  content: String
+  title: String!
+  introduction: String!
+  content: String!
   authors: [Author]
   image: Image
   audio: Audio
