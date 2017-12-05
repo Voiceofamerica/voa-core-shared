@@ -15,7 +15,7 @@
     "prepare": "npm version minor",
     "pregit-publish": "npm run prepare",
     "git-publish": "git push && git push --tags",
-    "push-schema": "npm run build && git commit -a -m 'updating gql schema' && npm run git-publish"
+    "push-schema": "npm run build && git commit -a -m 'updating gql schema' && npm run git-publish && npm publish"
   },
   "repository": {
     "type": "git",
