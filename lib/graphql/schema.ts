@@ -7,7 +7,7 @@ enum Audience {
 }
 
 enum ContentType {
-  Audio
+  Article
   Video
   PhotoGallery
 }
@@ -74,7 +74,7 @@ type Article {
   id: Int!
   site: Int
   zone: Int
-  type: [ContentType]
+  type: ContentType
   pubDate: String!
   lastUpdated: String
   url: String
@@ -99,7 +99,7 @@ type Zone {
 }
 
 type Query {
-  articles(source: Audience): [Article]
+  articles(source: Audience, type: [ContentType] = [Article]): [Article]
   articleById(source: Audience, id: Int): Article
   articlesByZoneId(source: Audience, zoneId: Int): [Article]
   search(source: Audience, keywords: String, zoneId: Int = 0): [Article]
