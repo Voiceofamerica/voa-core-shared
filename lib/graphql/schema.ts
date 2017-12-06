@@ -64,7 +64,7 @@ type RelatedStory {
   storyTitle: String!
   id: Int!
   pubDate: String!
-  type: [ContentType]
+  type: ContentType
   url: String
   twitter: String
   thumbnailUrl: String
