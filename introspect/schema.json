@@ -76,6 +76,20 @@
                     "ofType": null
                   },
                   "defaultValue": null
+                },
+                {
+                  "name": "type",
+                  "description": "",
+                  "type": {
+                    "kind": "LIST",
+                    "name": null,
+                    "ofType": {
+                      "kind": "ENUM",
+                      "name": "ContentType",
+                      "ofType": null
+                    }
+                  },
+                  "defaultValue": "[Article]"
                 }
               ],
               "type": {
@@ -109,6 +123,20 @@
                     "ofType": null
                   },
                   "defaultValue": null
+                },
+                {
+                  "name": "type",
+                  "description": "",
+                  "type": {
+                    "kind": "LIST",
+                    "name": null,
+                    "ofType": {
+                      "kind": "ENUM",
+                      "name": "ContentType",
+                      "ofType": null
+                    }
+                  },
+                  "defaultValue": "[Article]"
                 }
               ],
               "type": {

@@ -98,8 +98,12 @@ type Zone {
 
 type Query {
   articles(source: Audience, type: [ContentType] = [Article]): [Article]
-  articleById(source: Audience, id: Int): Article
-  articlesByZoneId(source: Audience, zoneId: Int): [Article]
+  articleById(source: Audience, id: Int, type: [ContentType] = [Article]): Article
+  articlesByZoneId(
+    source: Audience
+    zoneId: Int
+    type: [ContentType] = [Article]
+  ): [Article]
   search(source: Audience, keywords: String, zoneId: Int = 0): [Article]
   breakingNews(source: Audience): [Article]
   zones(source: Audience): [Zone]
