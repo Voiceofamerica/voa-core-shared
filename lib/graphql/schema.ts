@@ -31,6 +31,8 @@ type Photo {
 type PhotoGallery {
   id: Int!
   relType: ArticleVideoRelationship
+  photoGalleryTitle: String
+  photoGalleryDescription: String
   photo: [Photo]
 }
 
