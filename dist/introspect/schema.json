@@ -20,9 +20,13 @@
                   "name": "source",
                   "description": "",
                   "type": {
-                    "kind": "ENUM",
-                    "name": "Audience",
-                    "ofType": null
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "ENUM",
+                      "name": "Audience",
+                      "ofType": null
+                    }
                   },
                   "defaultValue": null
                 },
@@ -30,12 +34,20 @@
                   "name": "type",
                   "description": "",
                   "type": {
-                    "kind": "LIST",
+                    "kind": "NON_NULL",
                     "name": null,
                     "ofType": {
-                      "kind": "ENUM",
-                      "name": "ContentType",
-                      "ofType": null
+                      "kind": "LIST",
+                      "name": null,
+                      "ofType": {
+                        "kind": "NON_NULL",
+                        "name": null,
+                        "ofType": {
+                          "kind": "ENUM",
+                          "name": "ContentType",
+                          "ofType": null
+                        }
+                      }
                     }
                   },
                   "defaultValue": null
@@ -91,9 +103,13 @@
                   "name": "source",
                   "description": "",
                   "type": {
-                    "kind": "ENUM",
-                    "name": "Audience",
-                    "ofType": null
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "ENUM",
+                      "name": "Audience",
+                      "ofType": null
+                    }
                   },
                   "defaultValue": null
                 },
@@ -101,9 +117,13 @@
                   "name": "keywords",
                   "description": "",
                   "type": {
-                    "kind": "SCALAR",
-                    "name": "String",
-                    "ofType": null
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "SCALAR",
+                      "name": "String",
+                      "ofType": null
+                    }
                   },
                   "defaultValue": null
                 },
@@ -138,9 +158,13 @@
                   "name": "source",
                   "description": "",
                   "type": {
-                    "kind": "ENUM",
-                    "name": "Audience",
-                    "ofType": null
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "ENUM",
+                      "name": "Audience",
+                      "ofType": null
+                    }
                   },
                   "defaultValue": null
                 }
@@ -165,9 +189,13 @@
                   "name": "source",
                   "description": "",
                   "type": {
-                    "kind": "ENUM",
-                    "name": "Audience",
-                    "ofType": null
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "ENUM",
+                      "name": "Audience",
+                      "ofType": null
+                    }
                   },
                   "defaultValue": null
                 }
@@ -192,9 +220,13 @@
                   "name": "source",
                   "description": "",
                   "type": {
-                    "kind": "ENUM",
-                    "name": "Audience",
-                    "ofType": null
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "ENUM",
+                      "name": "Audience",
+                      "ofType": null
+                    }
                   },
                   "defaultValue": null
                 }

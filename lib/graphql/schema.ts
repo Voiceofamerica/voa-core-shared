@@ -140,15 +140,15 @@ type Program {
 
 type Query {
   content(
-    source: Audience
-    type: [ContentType]
+    source: Audience!
+    type: [ContentType!]!
     id: Int = 0
     zoneId: Int = 0
     count: Int = 30
   ): [Article]
-  search(source: Audience, keywords: String, zoneId: Int = 0): [Article]
-  breakingNews(source: Audience): [Article]
-  program(source: Audience): [Program]
-  zones(source: Audience): [Zone]
+  search(source: Audience!, keywords: String!, zoneId: Int = 0): [Article]
+  breakingNews(source: Audience!): [Article]
+  program(source: Audience!): [Program]
+  zones(source: Audience!): [Zone]
 }
 `
