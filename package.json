@@ -1,6 +1,6 @@
 {
   "name": "@voiceofamerica/voa-core-shared",
-  "version": "1.41.0",
+  "version": "1.42.0",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -10,13 +10,11 @@
     "prebuild": "npm run create-ts-file",
     "build": "rimraf ./dist && tsc",
     "postbuild": "npm run introspect",
-    "introspect":
-      "apollo-codegen introspect-schema ./lib/graphql/schema.graphql --output ./introspect/schema.json",
+    "introspect": "apollo-codegen introspect-schema ./lib/graphql/schema.graphql --output ./introspect/schema.json",
     "postintrospect": "find ./introspect -type f -name '*.json' | cpio -p -d -v ./dist",
     "prepare": "npm version minor",
     "git-publish": "git push",
-    "push-schema":
-      "npm run build && git commit -a -m 'updating gql schema' && npm run git-publish && npm publish",
+    "push-schema": "npm run build && git commit -a -m 'updating gql schema' && npm run git-publish && npm publish",
     "postpush-schema": "git push --tags"
   },
   "repository": {
