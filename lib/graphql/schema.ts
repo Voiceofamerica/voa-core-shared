@@ -83,9 +83,9 @@ type Article {
   introduction: String!
   content: String!
   authors: [Author]
-  image: [Image]
-  audio: [Audio]
-  video: [Video]
+  image: Image
+  audio: Audio
+  video: Video
   relatedStories: [RelatedStory]
 }
 
