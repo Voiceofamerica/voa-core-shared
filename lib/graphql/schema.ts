@@ -34,7 +34,7 @@ type Author {
 type Image {
   imageTitle: String
   id: Int!
-  type: [ContentType]
+  type: String
   url: String!
 }
 
