@@ -67,6 +67,7 @@ type Audio {
 }
 
 type Video {
+  videoTitle: String
   videoDescription: String
   guid: String
   relType: ArticleVideoRelationship
