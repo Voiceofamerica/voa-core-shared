@@ -60,7 +60,7 @@
                     "name": "Int",
                     "ofType": null
                   },
-                  "defaultValue": "0"
+                  "defaultValue": null
                 },
                 {
                   "name": "zoneId",
@@ -70,7 +70,7 @@
                     "name": "Int",
                     "ofType": null
                   },
-                  "defaultValue": "0"
+                  "defaultValue": null
                 },
                 {
                   "name": "count",
@@ -135,7 +135,7 @@
                     "name": "Int",
                     "ofType": null
                   },
-                  "defaultValue": "0"
+                  "defaultValue": null
                 }
               ],
               "type": {
