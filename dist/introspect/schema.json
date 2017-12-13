@@ -131,9 +131,13 @@
                   "name": "zoneId",
                   "description": "",
                   "type": {
-                    "kind": "SCALAR",
-                    "name": "Int",
-                    "ofType": null
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "SCALAR",
+                      "name": "Int",
+                      "ofType": null
+                    }
                   },
                   "defaultValue": "0"
                 }
@@ -195,6 +199,28 @@
                       "kind": "ENUM",
                       "name": "Audience",
                       "ofType": null
+                    }
+                  },
+                  "defaultValue": null
+                },
+                {
+                  "name": "type",
+                  "description": "",
+                  "type": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "LIST",
+                      "name": null,
+                      "ofType": {
+                        "kind": "NON_NULL",
+                        "name": null,
+                        "ofType": {
+                          "kind": "ENUM",
+                          "name": "ContentType",
+                          "ofType": null
+                        }
+                      }
                     }
                   },
                   "defaultValue": null

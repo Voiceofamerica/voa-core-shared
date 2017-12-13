@@ -147,8 +147,8 @@ type Query {
     zoneId: Int = 0
     count: Int = 30
   ): [Article]
-  search(source: Audience!, keywords: String!, zoneId: Int = 0): [Article]
+  search(source: Audience!, keywords: String!, zoneId: Int! = 0): [Article]
   breakingNews(source: Audience!): [Article]
-  program(source: Audience!): [Program]
+  program(source: Audience!, type: [ContentType!]!): [Program]
   zones(source: Audience!): [Zone]
 }
