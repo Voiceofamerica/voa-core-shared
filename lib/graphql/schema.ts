@@ -57,7 +57,7 @@ type Image {
 }
 
 type Audio {
-  audioTitle: String!
+  audioTitle: String
   audioDescription: String
   id: Int!
   duration: Int
@@ -151,7 +151,7 @@ type Query {
   ): [Article]
   search(source: Audience!, keywords: String!, zoneId: Int): [Article]
   breakingNews(source: Audience!): [Article]
-  program(source: Audience!, type: [ContentType!]!): [Program]
+  program(source: Audience!, type: [ProgramType!]!): [Program]
   zones(source: Audience!): [Zone]
 }
 `
