@@ -6,6 +6,7 @@
     "rbbit.typescript-hero",
     "eg2.tslint",
     "christian-kohler.path-intellisense",
-    "CoenraadS.bracket-pair-colorizer"
+    "CoenraadS.bracket-pair-colorizer",
+    "kumar-harsh.graphql-for-vscode"
   ]
 }
