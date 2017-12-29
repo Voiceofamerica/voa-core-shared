@@ -13,7 +13,7 @@
     "introspect":
       "apollo-codegen introspect-schema ./lib/graphql/schema.graphql --output ./introspect/schema.json",
     "postintrospect": "find ./introspect -type f -name '*.json' | cpio -p -d -v ./dist",
-    "prepare": "npm version minor",
+    "prepush-schema": "npm version minor",
     "git-publish": "git push",
     "push-schema":
       "npm run build && git commit -a -m 'updating gql schema' && npm run git-publish && npm publish",
