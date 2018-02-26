@@ -146,6 +146,7 @@ type Query {
     id: Int
     zoneId: Int
     count: Int = 30
+    topNews: Boolean = false
   ): [Article]
   search(source: Audience!, keywords: String!, zoneId: Int): [Article]
   breakingNews(source: Audience!): [Article]
