@@ -152,7 +152,7 @@ type Query {
   ): [Article]
   search(source: Audience!, keywords: String!, zoneId: Int): [Article]
   breakingNews(source: Audience!): [Article]
-  program(source: Audience!, type: [ProgramType!]!): [Program]
+  program(source: Audience!, type: [ProgramType!]!, zoneId: Int): [Program]
   zones(source: Audience!): [Zone]
 }
 `
