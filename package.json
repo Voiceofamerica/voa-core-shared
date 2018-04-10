@@ -14,7 +14,7 @@
     "copyintrospect": "find ./introspect -type f -name '*.json' | cpio -p -d -v ./dist",
     "prepush-schema": "npm run introspect && npm run copyintrospect && npm version minor",
     "git-publish": "git push",
-    "push-schema": "npm run build && git commit -a -m 'updating gql schema' && npm run git-publish && npm publish",
+    "push-schema": "npm run build && git commit -a -m 'updating gql schema' || true && npm run git-publish && npm publish",
     "postpush-schema": "git push --tags"
   },
   "repository": {
