@@ -11,13 +11,12 @@
 
 * `npm install`
 * Install recommend VS Code Extensions
-* `npm update-shared` to update voa-code-shared library
 
 ## Publish
 
 * `npm run build`
 * **Commit** resulting changes
-* `npm run git-publish`
+* `npm run push-schema`
 
 ### Dangerous
 
