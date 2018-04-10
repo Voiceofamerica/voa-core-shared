@@ -23,9 +23,12 @@ enum ArticleVideoRelationship {
 type Photo {
   id: Int
   order: Int
-  url: String
+  url: String!
   photoTitle: String
   photoDescription: String
+  tiny: String!
+  thumb: String!
+  hero: String!
 }
 
 type PhotoGallery {
@@ -54,6 +57,9 @@ type Image {
   id: Int!
   type: String
   url: String!
+  tiny: String!
+  thumb: String!
+  hero: String!
 }
 
 type Audio {
