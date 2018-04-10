@@ -1,16 +1,21 @@
 {
-  "name": "voa-core-shared",
-  "version": "1.12.0",
+  "name": "@voiceofamerica/voa-core-shared",
+  "version": "1.49.0",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npm run introspect",
+    "create-ts-file": "./scripts/create-ts-file.sh",
+    "prebuild": "npm run create-ts-file",
     "build": "rimraf ./dist && tsc",
-    "preprepare": "apollo-codegen introspect-schema ./lib/graphql/articleSchema.graphql --output ./introspect/articleSchema.json",
-    "prepare": "npm run build && npm run copyIntrospections && npm version minor",
-    "copyIntrospections": "find ./introspect -type f -name '*.json' | cpio -p -d -v ./dist",
-    "hobo-publish": "git push --tags && git push"
+    "postbuild": "npm run introspect",
+    "introspect": "apollo-codegen introspect-schema ./lib/graphql/schema.graphql --output ./introspect/schema.json",
+    "copyintrospect": "find ./introspect -type f -name '*.json' | cpio -p -d -v ./dist",
+    "prepush-schema": "npm run introspect && npm run copyintrospect && npm version minor",
+    "git-publish": "git push",
+    "push-schema": "npm run build && git commit -a -m 'updating gql schema' && npm run git-publish && npm publish",
+    "postpush-schema": "git push --tags"
   },
   "repository": {
     "type": "git",
