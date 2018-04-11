@@ -26,8 +26,9 @@ type Photo {
   url: String!
   photoTitle: String
   photoDescription: String
+  tiny: String!
   thumb: String!
-  full: String!
+  hero: String!
 }
 
 type PhotoGallery {
@@ -82,6 +83,9 @@ type Video {
   duration: Int
   url: String
   thumbnail: String
+  thumbnailTiny: String
+  thumbnailThumb: String
+  thumbnailHero: String
 }
 
 type RelatedStory {
@@ -92,6 +96,9 @@ type RelatedStory {
   url: String
   twitter: String
   thumbnailUrl: String
+  thumbnailTiny: String
+  thumbnailThumb: String
+  thumbnailHero: String
 }
 
 type Article {
