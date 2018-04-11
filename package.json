@@ -9,13 +9,11 @@
     "create-ts-file": "./scripts/create-ts-file.sh",
     "prebuild": "npm run create-ts-file",
     "build": "rimraf ./dist && tsc",
-    "postbuild": "npm run introspect",
+    "postbuild": "npm run introspect && npm run copyintrospect",
     "introspect": "apollo-codegen introspect-schema ./lib/graphql/schema.graphql --output ./introspect/schema.json",
     "copyintrospect": "find ./introspect -type f -name '*.json' | cpio -p -d -v ./dist",
-    "prepush-schema": "npm run introspect && npm run copyintrospect && npm version minor",
-    "git-publish": "git push",
-    "push-schema": "npm run build && git commit -a -m 'updating gql schema' || true && npm run git-publish && npm publish",
-    "postpush-schema": "git push --tags"
+    "push-schema": "npm run build && git commit -a -m 'updating gql schema' || true && npm version minor && npm publish",
+    "postpush-schema": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
