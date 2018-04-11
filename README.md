@@ -14,8 +14,6 @@
 
 ## Publish
 
-* `npm run build`
-* **Commit** resulting changes
 * `npm run push-schema`
 
 ### Dangerous
