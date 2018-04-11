@@ -14,7 +14,11 @@
 
 ## Publish
 
-* `npm run push-schema`
+* `npm run build`
+* **Commit** resulting changes
+* `npm version minor`
+* `npm publish`
+* `git push --follow-tags`
 
 ### Dangerous
 
