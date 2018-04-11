@@ -26,9 +26,8 @@ type Photo {
   url: String!
   photoTitle: String
   photoDescription: String
-  tiny: String!
   thumb: String!
-  hero: String!
+  full: String!
 }
 
 type PhotoGallery {

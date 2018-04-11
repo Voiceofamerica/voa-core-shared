@@ -1398,22 +1398,6 @@
               "deprecationReason": null
             },
             {
-              "name": "tiny",
-              "description": "",
-              "args": [],
-              "type": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": {
-                  "kind": "SCALAR",
-                  "name": "String",
-                  "ofType": null
-                }
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
               "name": "thumb",
               "description": "",
               "args": [],
@@ -1430,7 +1414,7 @@
               "deprecationReason": null
             },
             {
-              "name": "hero",
+              "name": "full",
               "description": "",
               "args": [],
               "type": {
