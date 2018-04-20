@@ -2,6 +2,7 @@ import gql from 'graphql-tag'
 export const schema = gql`
 enum Audience {
   en
+  enus
   zhcn
   zhtw
   fa

@@ -306,6 +306,12 @@
               "deprecationReason": null
             },
             {
+              "name": "enus",
+              "description": "",
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
               "name": "zhcn",
               "description": "",
               "isDeprecated": false,
