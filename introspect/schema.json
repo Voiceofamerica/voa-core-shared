@@ -312,6 +312,30 @@
               "deprecationReason": null
             },
             {
+              "name": "fa",
+              "description": "",
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "ko",
+              "description": "",
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "ur",
+              "description": "",
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "vi",
+              "description": "",
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
               "name": "zhcn",
               "description": "",
               "isDeprecated": false,
@@ -319,12 +343,6 @@
             },
             {
               "name": "zhtw",
-              "description": "",
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "fa",
               "description": "",
               "isDeprecated": false,
               "deprecationReason": null

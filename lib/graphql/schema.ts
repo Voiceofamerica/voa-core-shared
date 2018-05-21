@@ -3,9 +3,12 @@ export const schema = gql`
 enum Audience {
   en
   enus
+  fa
+  ko
+  ur
+  vi
   zhcn
   zhtw
-  fa
 }
 
 enum ContentType {
