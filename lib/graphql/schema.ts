@@ -6,6 +6,8 @@ enum Audience {
   fa
   ko
   ur
+  prs
+  pus
   vi
   zhcn
   zhtw
