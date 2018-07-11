@@ -171,6 +171,7 @@ type Query {
   search(source: Audience!, keywords: String!, zoneId: Int): [Article]
   breakingNews(source: Audience!): [Article]
   program(source: Audience!, type: [ProgramType!]!, zoneId: Int): [Program]
+  audioProgram(source: Audience!, zoneId: Int): [Program]
   zones(source: Audience!): [Zone]
 }
 `
