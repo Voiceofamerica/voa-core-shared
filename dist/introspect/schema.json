@@ -341,6 +341,18 @@
           "interfaces": null,
           "enumValues": [
             {
+              "name": "am",
+              "description": "",
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "bo",
+              "description": "",
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
               "name": "en",
               "description": "",
               "isDeprecated": false,
@@ -348,6 +360,12 @@
             },
             {
               "name": "enus",
+              "description": "",
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "es",
               "description": "",
               "isDeprecated": false,
               "deprecationReason": null
@@ -365,7 +383,7 @@
               "deprecationReason": null
             },
             {
-              "name": "ur",
+              "name": "om",
               "description": "",
               "isDeprecated": false,
               "deprecationReason": null
@@ -383,6 +401,24 @@
               "deprecationReason": null
             },
             {
+              "name": "ru",
+              "description": "",
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "tg",
+              "description": "",
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "ur",
+              "description": "",
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
               "name": "vi",
               "description": "",
               "isDeprecated": false,
@@ -390,12 +426,6 @@
             },
             {
               "name": "zhcn",
-              "description": "",
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "zhtw",
               "description": "",
               "isDeprecated": false,
               "deprecationReason": null

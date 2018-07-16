@@ -1,16 +1,21 @@
 import gql from 'graphql-tag'
 export const schema = gql`
 enum Audience {
-  en
-  enus
-  fa
-  ko
-  ur
-  prs
-  pus
-  vi
-  zhcn
-  zhtw
+  am # Amharic
+  bo # Tibetan
+  en # European english (RFE/RL)
+  enus # US English
+  es # Spanish
+  fa # Farsi
+  ko # Korean
+  om # Afaan Oromoo
+  prs # Dari
+  pus # Pashto
+  ru # Russian
+  tg # Tigrinya
+  ur # Urdu
+  vi # Vietnamese
+  zhcn # Simplified Chinese
 }
 
 enum ContentType {
