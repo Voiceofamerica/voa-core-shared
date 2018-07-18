@@ -12,7 +12,7 @@ enum Audience {
   prs # Dari
   pus # Pashto
   ru # Russian
-  tg # Tigrinya
+  tg # Tigrigna
   ur # Urdu
   vi # Vietnamese
   zhcn # Simplified Chinese
